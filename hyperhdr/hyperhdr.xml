@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>hyperhdr</Name>
+  <Repository>nocturno/hyper-hdr:latest</Repository>
+  <Registry>https://github.com/awawa-dev/HyperHDR</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/awawa-dev/HyperHDR/discussions</Support>
+  <Project>https://github.com/awawa-dev/HyperHDR https://hub.docker.com/r/nocturno/hyper-hdr</Project>
+  <Overview>Open source ambient lighting implementation for television and music sets based on the video and audio streams analysis. Focused on stability while ensuring performance and quality. Single and multi-threaded video processing optimization for Windows, macOS and Linux x64 &amp;amp; ARM (Raspberry Pi and others).</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8090]</WebUI>
+  <TemplateURL/>
+  <Icon>https://avatars.githubusercontent.com/u/69086569?v=4</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1706390915</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="HTTP Web UI" Target="8090" Default="8090" Mode="tcp" Description="Port used to access the web interface of the application via http." Type="Port" Display="always" Required="false" Mask="false">8090</Config>
+  <Config Name="HTTPS Web UI" Target="8092" Default="8092" Mode="tcp" Description="Port used to access the web interface of the application via https." Type="Port" Display="always" Required="false" Mask="false">8092</Config>
+  <Config Name="JSON Server" Target="19444" Default="19444" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">19444</Config>
+  <Config Name="Flatbuffers Server" Target="19400" Default="19400" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">19400</Config>
+  <Config Name="Protocol Buffers Server" Target="19445" Default="19445" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">19445</Config>
+  <Config Name="Boblight Server" Target="19333" Default="19333" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">19333</Config>
+  <Config Name="UDP RAW Receiver" Target="5568" Default="5568" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">5568</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Local configuration folder" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+</Container>
