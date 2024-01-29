@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Glances</Name>
+  <Repository>nicolargo/glances:latest</Repository>
+  <Registry>https://hub.docker.com/r/nicolargo/glances/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/nicolargo/glances</Project>
+  <Overview>Glances is an open-source system cross-platform monitoring tool. It allows real-time monitoring of various aspects of your system such as CPU, memory, disk, network usage etc. It also allows monitoring of running processes, logged in users, temperatures, voltages, fan speeds etc. It also supports container monitoring, it supports different container management systems such as Docker, LXC. The information is presented in an easy to read dashboard and can also be used for remote monitoring of systems via a web interface or command line interface. It is easy to install and use and can be customized to show only the information that you are interested in.&#xD;
+&#xD;
+</Overview>
+  <Category>Network:Management Network:Other Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:61208]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/glances.xml</TemplateURL>
+  <Icon>https://github.com/nicolargo/glances/raw/master/glances/outputs/static/images/glances.png</Icon>
+  <ExtraParams>--pid=host</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1706551422</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Before starting the container copy glances.conf to /mnt/user/appdata/glances/&#xD;
+glances.conf file can be found here:&#xD;
+&#xD;
+https://github.com/nicolargo/glances/tree/develop/conf&#xD;
+</Requires>
+  <Config Name="Web server mode" Target="GLANCES_OPT" Default="-w" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-w</Config>
+  <Config Name="WEB UI Port" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">61208</Config>
+  <Config Name="Acces to all disks" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/</Config>
+  <Config Name="Docker Path" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Config file location" Target="/etc/glances/glances.conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/glances/glances.conf</Config>
+</Container>
