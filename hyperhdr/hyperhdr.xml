@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>hyperhdr</Name>
+  <Name>HyperHDR</Name>
   <Repository>nocturno/hyper-hdr:latest</Repository>
   <Registry>https://github.com/awawa-dev/HyperHDR</Registry>
   <Network>bridge</Network>
