@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/69491-support-jj9987-portainer/</Support>
   <Project>https://portainer.io</Project>
   <Overview>Portainer consists of two elements, the Portainer Server, and the Portainer Agent. Both elements run as lightweight Docker containers on a Docker engine.&#xD;
 Portainer uses the Portainer Agent container to communicate with the Portainer Server instance and provide access to the node's resources.</Overview>
