@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Portainer-Agent</Name>
   <Repository>portainer/agent:latest</Repository>
-  <Registry>https://registry.hub.docker.com/r/portainer/agent/</Registry>
+  <Registry>https://hub.docker.com/r/portainer/agent/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
