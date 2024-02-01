@@ -12,7 +12,7 @@
   <Overview>Portainer is a lightweight management UI which allows you to easily manage your different Docker environments (Docker hosts or Swarm clusters). Portainer is meant to be as simple to deploy as it is to use. It consists of a single container that can run on any Docker engine (can be deployed as Linux container or a Windows native container, supports other platforms too). Portainer allows you to manage all your Docker resources (containers, images, volumes, networks and more) ! It is compatible with the standalone Docker engine and with Docker Swarm mode.</Overview>
   <Category>Network:Management Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:9000]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/frakman1/docker-templates/master/tynor88/PortainerCI.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/EMP83/unraid-templates/main/PortainerCE/PortainerCE.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/main/PortainerCE/Portainer.png</Icon>
   <ExtraParams/>
   <PostArgs/>
