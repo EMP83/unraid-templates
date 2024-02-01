@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>PortainerCE</Name>
   <Repository>portainer/portainer-ce:latest</Repository>
-  <Registry>https://registry.hub.docker.com/r/portainer/portainer-ce/</Registry>
+  <Registry>https://hub.docker.com/r/portainer/portainer-ce/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
