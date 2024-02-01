@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Portainer-Agent</Name>
+  <Repository>portainer/agent:latest</Repository>
+  <Registry>https://registry.hub.docker.com/r/portainer/agent/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://portainer.io</Project>
+  <Overview>Portainer consists of two elements, the Portainer Server, and the Portainer Agent. Both elements run as lightweight Docker containers on a Docker engine.&#xD;
+Portainer uses the Portainer Agent container to communicate with the Portainer Server instance and provide access to the node's resources.</Overview>
+  <Category>Network:Management Productivity: Tools:Utilities</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/EMP83/unraid-templates/main/Portainer-Agent/Portainer-Agent.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/main/PortainerCE/Portainer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1706792853</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Agent Port" Target="9001" Default="9001" Mode="tcp" Description="Portainer Agent Port" Type="Port" Display="always-hide" Required="true" Mask="null">9001</Config>
+  <Config Name="Portainer Storage Path" Target="/var/lib/docker/volumes" Default="/mnt/user/appdata/portainer" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="null">/mnt/user/appdata/portainer</Config>
+  <Config Name="Docker socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="This is needed for Portainer to connect to Docker." Type="Path" Display="advanced-hide" Required="true" Mask="null">/var/run/docker.sock</Config>
+</Container>
