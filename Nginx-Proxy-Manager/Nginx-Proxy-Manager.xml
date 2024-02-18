@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Nginx-Proxy-Manager</Name>
+  <Repository>jc21/nginx-proxy-manager</Repository>
+  <Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/110245-support-nginx-proxy-manager-npm-official/</Support>
+  <Project>https://nginxproxymanager.com/</Project>
+  <Overview>Nginx Proxy Manager (NPM) allows adding proxy hosts through a password-protected multi-user WebUI. Add free Let's Encrypt SSL certificates to secure your web services. They are renewed by NPM automatically.&#xD;
+&#xD;
+Default login:&#xD;
+admin@example.com&#xD;
+&#xD;
+Password:&#xD;
+changeme</Overview>
+  <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:81]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/master/mgutt/Nginx-Proxy-Manager-Official.xml</TemplateURL>
+  <Icon>https://nginxproxymanager.com/icon.png</Icon>
+  <ExtraParams>--no-healthcheck --restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1708270535</DateInstalled>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.me/marcgutt</DonateLink>
+  <Requires>This template is intended to run Nginx Proxy Manager together with MariaDB. MariaDB must already be installed, you must have already created a database, a user and a password for NPM. &#xD;
+It is not mandatory, but it is also recommended that you have created a custom bridge network and put the two containers in the same network, in this way they can communicate between them and the name of the container can be used instead of the IP address to connect to MariaDB.</Requires>
+  <Config Name="WebUI" Target="81" Default="" Mode="tcp" Description="WebUI Port." Type="Port" Display="always" Required="false" Mask="false">1881</Config>
+  <Config Name="HTTP Port" Target="80" Default="" Mode="tcp" Description="Open port 80 in your router and redirect it to the IP address of this server and port 1880" Type="Port" Display="always" Required="false" Mask="false">1880</Config>
+  <Config Name="HTTPS Port" Target="443" Default="" Mode="tcp" Description="Open port 443 in your router and redirect it to the IP address of this server and port 18443" Type="Port" Display="always" Required="false" Mask="false">18443</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Path to store Nginx Proxy Manager data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nginxproxymanager/data/</Config>
+  <Config Name="Certificates" Target="/etc/letsencrypt" Default="" Mode="rw" Description="Path to store letsencrypt certificates." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nginxproxymanager/letsencrypt/</Config>
+  <Config Name="Error Logs" Target="/var/log" Default="" Mode="rw" Description="Path to store log files." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nginxproxymanager/log/</Config>
+  <Config Name="MariaDB Host" Target="DB_MYSQL_HOST" Default="MariaDB" Mode="" Description="The ip address or name of the MariaDB container must be put here." Type="Variable" Display="always" Required="true" Mask="false">172.16.1.138</Config>
+  <Config Name="MariaDB Port" Target="DB_MYSQL_PORT" Default="3306" Mode="" Description="The port of the MariaDB container must be put here." Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MariaDB User" Target="DB_MYSQL_USER" Default="npm" Mode="" Description="The name of the MariaDB user for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="false">npm</Config>
+  <Config Name="MariaDB Password" Target="DB_MYSQL_PASSWORD" Default="@fgjhJJGjis#2" Mode="" Description="The password of the MariaDB user for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="true">@fgjhJJGjis#2</Config>
+  <Config Name="MariaDB Database Name" Target="DB_MYSQL_NAME" Default="npm" Mode="" Description="The name of the MariaDB database for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="false">npm</Config>
+</Container>
