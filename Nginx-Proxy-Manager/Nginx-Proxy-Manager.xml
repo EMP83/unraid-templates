@@ -37,6 +37,6 @@ It is not mandatory, but it is also recommended that you have created a custom b
   <Config Name="MariaDB Host" Target="DB_MYSQL_HOST" Default="MariaDB" Mode="" Description="The ip address or name of the MariaDB container must be put here." Type="Variable" Display="always" Required="true" Mask="false">172.16.1.138</Config>
   <Config Name="MariaDB Port" Target="DB_MYSQL_PORT" Default="3306" Mode="" Description="The port of the MariaDB container must be put here." Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
   <Config Name="MariaDB User" Target="DB_MYSQL_USER" Default="npm" Mode="" Description="The name of the MariaDB user for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="false">npm</Config>
-  <Config Name="MariaDB Password" Target="DB_MYSQL_PASSWORD" Default="@fgjhJJGjis#2" Mode="" Description="The password of the MariaDB user for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="true">@fgjhJJGjis#2</Config>
+  <Config Name="MariaDB Password" Target="DB_MYSQL_PASSWORD" Default="database-password" Mode="" Description="The password of the MariaDB user for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="true">@fgjhJJGjis#2</Config>
   <Config Name="MariaDB Database Name" Target="DB_MYSQL_NAME" Default="npm" Mode="" Description="The name of the MariaDB database for NPM must be put here." Type="Variable" Display="always" Required="true" Mask="false">npm</Config>
 </Container>
