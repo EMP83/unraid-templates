@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WireGuard</Name>
+  <Repository>lscr.io/linuxserver/wireguard:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-wireguard</Support>
+  <Project>https://docs.linuxserver.io/images/docker-wireguard/</Project>
+  <Overview>Why this template? Because I've been struggling for a few months to use the integrated version of WireGuard on unRAID but it never worked for me and from what I've seen I'm not the only one with this problem.&#xD;
+&#xD;
+The complete list of possible configurations can be found on the Linuxserver.io website.&#xD;
+&#xD;
+The easiest way to access the peers list is by accesing config folder via SMB.&#xD;
+&#xD;
+For PUID &amp;amp; PGID run "id user'' on terminal against the user which is used for smb authentication in the network.&#xD;
+&#xD;
+Port: default 51820 but it is strongly recommended to be changed. Do not forget that this port must be port forwarded on your router.</Overview>
+  <Category>Network:VPN Network:Privacy</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/main/WireGuard/WireGuard.png</Icon>
+  <ExtraParams>--cap-add NET_ADMIN --cap-add SYS_MODULE --sysctl net.ipv4.conf.all.src_valid_mark=1 --restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725992716</DateInstalled>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate/</DonateLink>
+  <Requires/>
+  <Config Name="SERVEURURL" Target="SERVEURURL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SERVERPORT" Target="SERVERPORT" Default="51820" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">51820</Config>
+  <Config Name="PEERS" Target="PEERS" Default="5" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2</Config>
+  <Config Name="PEERDNS" Target="PEERDNS" Default="auto" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">auto</Config>
+  <Config Name="INTERNAL_SUBNET" Target="INTERNAL_SUBNET" Default="10.10.10.0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">10.10.10.0</Config>
+  <Config Name="Config Location" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/WireGuard/config/</Config>
+  <Config Name="Modules" Target="/lib/modules" Default="/lib/modules" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/lib/modules</Config>
+  <Config Name="Port UDP" Target="51820" Default="51820" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">51820</Config>
+  <Config Name="PUID" Target="PUID" Default="1000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>
