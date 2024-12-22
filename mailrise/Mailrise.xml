@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Mailrise</Name>
+  <Repository>yoryan/mailrise</Repository>
+  <Registry>https://hub.docker.com/r/yoryan/mailrise</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/YoRyan/mailrise/issues</Support>
+  <Project>https://github.com/YoRyan/mailrise</Project>
+  <Overview>Mailrise is an SMTP server that converts the emails it receives into Apprise&#x2060; notifications. The intended use case is as an email relay for a home lab or network. By accepting ordinary email, Mailrise enables Linux servers, Internet of Things devices, surveillance systems, and outdated software to gain access to the full suite of 60+ notification services supported by Apprise, from Matrix to Nextcloud to your desktop or mobile device.&#xD;
+&#xD;
+To learn more, please visit the project page&#x2060;:&#xD;
+&#xD;
+https://github.com/YoRyan/mailrise</Overview>
+  <Category>Tools: Network:Messenger</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/refs/heads/main/mailrise/mailrise-logo.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs>/etc/mailrise/config.yml</PostArgs>
+  <CPUset/>
+  <DateInstalled>1734875759</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>You must download and configure the config.yml file before installing the docker container:&#xD;
+https://github.com/YoRyan/mailrise</Requires>
+  <Config Name="Config" Target="/etc/mailrise" Default="" Mode="ro" Description="Config file location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mailrise/</Config>
+  <Config Name="Listen port" Target="8025" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8025</Config>
+  <TailscaleStateDir/>
+</Container>
