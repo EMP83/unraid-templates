@@ -12,14 +12,14 @@
   <Overview>Multi-Arch/Multi-Platform Docker Container for hyperion.ng&#x2060;. Hyperion&#x2060; is an opensource Bias or Ambient Lighting&#x2060; implementation which you might know from TV manufacturers. It supports many LED devices and video grabbers.</Overview>
   <Category>HomeAutomation: Tools:Utilities Network:Other</Category>
   <WebUI>http://[IP]:[PORT:8090]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/xenco/docker-templates/master/xenco/hyperion.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/EMP83/unraid-templates/refs/heads/main/Hyperion/Hyperion.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/refs/heads/main/Hyperion/HyperIcon.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1734866706</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/HyperionAmbi</DonateLink>
   <Requires/>
   <Config Name="Config" Target="/root/.hyperion" Default="/mnt/cache/appdata/hyperion" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/hyperion</Config>
   <Config Name="Protobuffer" Target="19445" Default="19445" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19445</Config>
