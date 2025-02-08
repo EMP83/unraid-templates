@@ -20,8 +20,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1706551422</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://github.com/sponsors/nicolargo</DonateLink>
   <Requires/>
   <Config Name="Web server mode" Target="GLANCES_OPT" Default="-w" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-w</Config>
   <Config Name="WEB UI Port" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">61208</Config>
