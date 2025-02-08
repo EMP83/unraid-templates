@@ -27,6 +27,6 @@
   <Config Name="WEB UI Port" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">61208</Config>
   <Config Name="Acces to all disks" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/</Config>
   <Config Name="Docker Path" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
-  <Config Name="Config file location" Target="/etc/glances/glances.conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/glances/glances.conf</Config>
+  <Config Name="Config file location" Target="/etc/glances" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/glances</Config>
   <Config Name="OS-Release" Target="/etc/os-release" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/os-release</Config>
 </Container>
