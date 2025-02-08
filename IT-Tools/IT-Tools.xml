@@ -10,7 +10,7 @@
   <Support>https://github.com/CorentinTh/it-tools</Support>
   <Project>https://github.com/CorentinTh/it-tools</Project>
   <Overview>Useful tools for developer and people working in IT</Overview>
-  <Category/>
+  <Category>Network:Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/refs/heads/main/IT-Tools/IT-Tools.png</Icon>
