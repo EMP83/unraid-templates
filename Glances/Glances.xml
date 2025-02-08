@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Glances</Name>
-  <Repository>nicolargo/glances:latest</Repository>
+  <Repository>nicolargo/glances:dev</Repository>
   <Registry>https://hub.docker.com/r/nicolargo/glances/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -16,7 +16,7 @@
   <WebUI>http://[IP]:[PORT:61208]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/atribe/unRAID-docker/master/glances.xml</TemplateURL>
   <Icon>https://github.com/nicolargo/glances/raw/master/glances/outputs/static/images/glances.png</Icon>
-  <ExtraParams>--pid=host</ExtraParams>
+  <ExtraParams>--pid=host --restart unless-stopped </ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1706551422</DateInstalled>
@@ -32,4 +32,5 @@ https://github.com/nicolargo/glances/tree/develop/conf&#xD;
   <Config Name="Acces to all disks" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/</Config>
   <Config Name="Docker Path" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
   <Config Name="Config file location" Target="/etc/glances/glances.conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/glances/glances.conf</Config>
+  <Config Name="OS-Release" Target="/etc/os-release" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/os-release</Config>
 </Container>
