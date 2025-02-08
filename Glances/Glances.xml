@@ -22,11 +22,7 @@
   <DateInstalled>1706551422</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Before starting the container copy glances.conf to /mnt/user/appdata/glances/&#xD;
-glances.conf file can be found here:&#xD;
-&#xD;
-https://github.com/nicolargo/glances/tree/develop/conf&#xD;
-</Requires>
+  <Requires/>
   <Config Name="Web server mode" Target="GLANCES_OPT" Default="-w" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">-w</Config>
   <Config Name="WEB UI Port" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">61208</Config>
   <Config Name="Acces to all disks" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/</Config>
