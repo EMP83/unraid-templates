@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>IT-Tools</Name>
+  <Repository>corentinth/it-tools:latest</Repository>
+  <Registry>https://hub.docker.com/r/corentinth/it-tools</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/CorentinTh/it-tools</Support>
+  <Project>https://github.com/CorentinTh/it-tools</Project>
+  <Overview>Useful tools for developer and people working in IT</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/EMP83/unraid-templates/refs/heads/main/IT-Tools/IT-Tools.png</Icon>
+  <ExtraParams>--restart unless-stopped --hostname IT-Tools</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1739039656</DateInstalled>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://github.com/sponsors/CorentinTh</DonateLink>
+  <Requires/>
+  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8364</Config>
+  <TailscaleStateDir/>
+</Container>
