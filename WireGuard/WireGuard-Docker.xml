@@ -29,7 +29,7 @@ Port: default 51820 but it is strongly recommended to be changed. Do not forget 
   <DonateText>If you like my work please consider Donating.</DonateText>
   <DonateLink>https://www.linuxserver.io/donate/</DonateLink>
   <Requires/>
-  <Config Name="SERVEURURL" Target="SERVEURURL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SERVERURL" Target="SERVERURL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SERVERPORT" Target="SERVERPORT" Default="51820" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">51820</Config>
   <Config Name="PEERS" Target="PEERS" Default="5" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2</Config>
   <Config Name="PEERDNS" Target="PEERDNS" Default="auto" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">auto</Config>
