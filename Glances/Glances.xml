@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Glances</Name>
-  <Repository>nicolargo/glances:dev</Repository>
+  <Repository>nicolargo/glances:latest</Repository>
   <Registry>https://hub.docker.com/r/nicolargo/glances/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -30,3 +30,4 @@
   <Config Name="Config file location" Target="/etc/glances" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/glances</Config>
   <Config Name="OS-Release" Target="/etc/os-release" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/os-release</Config>
 </Container>
+
